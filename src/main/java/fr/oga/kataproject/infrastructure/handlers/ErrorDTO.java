@@ -1,10 +1,10 @@
 package fr.oga.kataproject.infrastructure.handlers;
 
+import fr.oga.kataproject.infrastructure.enums.ErrorCodes;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import fr.oga.kataproject.infrastructure.enums.ErrorCodes;
 
 import java.util.ArrayList;
 import java.util.List;

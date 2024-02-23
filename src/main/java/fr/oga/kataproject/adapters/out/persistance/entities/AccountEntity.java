@@ -1,4 +1,4 @@
-package fr.oga.kataproject.adapters.out.h2DB.entities;
+package fr.oga.kataproject.adapters.out.persistance.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

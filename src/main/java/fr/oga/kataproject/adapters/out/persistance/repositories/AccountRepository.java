@@ -1,6 +1,6 @@
-package fr.oga.kataproject.adapters.out.h2DB.repositories;
+package fr.oga.kataproject.adapters.out.persistance.repositories;
 
-import fr.oga.kataproject.adapters.out.h2DB.entities.AccountEntity;
+import fr.oga.kataproject.adapters.out.persistance.entities.AccountEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

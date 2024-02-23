@@ -1,21 +1,22 @@
-package fr.oga.kataproject.application.dto;
+package fr.oga.kataproject.adapters.out.persistance.entities;
 
 import fr.oga.kataproject.infrastructure.enums.Operation;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-@Getter
-@Setter
+@Table(name = "transaction")
+@Entity
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class StatementDto {
+public class TransactionEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Long accountId;
+    @Enumerated(EnumType.STRING)
     private Operation operation;
     private float oldBalance;
     private float difference;

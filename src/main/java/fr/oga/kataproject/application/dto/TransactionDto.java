@@ -1,22 +1,18 @@
-package fr.oga.kataproject.adapters.out.h2DB.entities;
+package fr.oga.kataproject.application.dto;
 
 import fr.oga.kataproject.infrastructure.enums.Operation;
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Table(name = "statements")
-@Entity
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class StatementEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class TransactionDto {
     private Long id;
     private Long accountId;
-    @Enumerated(EnumType.STRING)
     private Operation operation;
     private float oldBalance;
     private float difference;
